@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Make My Destiny</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    
+    <div class="navbar">
+    <h2>Make My Destiny</h2>
+    <button onclick="logout()">Logout</button>
+</div>
+
+<div class="container">
+
+    <h2>Login</h2>
+    <input id="username" placeholder="Username">
+    <input id="password" type="password" placeholder="Password">
+    <button onclick="login()">Login</button>
+
+    <hr>
+
+    <h2>Signup</h2>
+    <input id="s_user" placeholder="Username">
+    <input id="s_first" placeholder="First Name">
+    <input id="s_last" placeholder="Last Name">
+    <input id="s_phone" placeholder="Phone">
+    <input id="s_email" placeholder="Email">
+    <input id="s_pass" type="password" placeholder="Password">
+    <button onclick="signup()">Create Account</button>
+
+    <hr>
+
+    <div class="card">
+
+    <h2>Book Ticket</h2>
+
+    <input id="service" placeholder="Bus / Train / Flight">
+    <input id="from" placeholder="From">
+    <input id="to" placeholder="To">
+    <input id="date" placeholder="Date">
+    <input id="persons" placeholder="Persons">
+    <h3>Select Seat</h3>
+<div id="seatContainer"></div>
+<input id="seat" placeholder="Selected Seat" readonly>
+
+    <button onclick="book()">Book Now</button>
+    <button onclick="viewBookings()">View Bookings</button>
+
+    <div id="output"></div>
+
+</div>
+
+</div>
+
+<script src="/static/script.js"></script>
+<div id="adminPanel" style="display:none; margin-top:20px;">
+    <h2>Admin Dashboard</h2>
+    <button onclick="viewAllBookings()">View All Bookings</button>
+
+    <div id="adminOutput"></div>
+</div>
+
+</body>
+</html>

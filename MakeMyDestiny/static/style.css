@@ -1,0 +1,114 @@
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to right, #2ae1f1, #cf50da);
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 90%;
+    max-width: 450px;
+    margin: 40px auto;
+    background: rgb(148, 237, 209);
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0px 5px 20px rgba(0,0,0,0.2);
+}
+
+h1 {
+    color: #5d87e2;
+    margin-bottom: 10px;
+}
+
+input {
+    width: 90%;
+    padding: 10px;
+    margin: 8px 0;
+    border: 1px solid #1b0404;
+    border-radius: 8px;
+    outline: none;
+}
+
+button {
+    width: 95%;
+    padding: 10px;
+    margin: 8px 0;
+    background: #d84e55;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background: #f5c977;
+}
+
+h2 {
+    color: #333;
+    margin-top: 20px;
+}
+
+hr {
+    margin: 20px 0;
+    border: 0.5px solid #eee;
+}
+
+#output {
+    text-align: left;
+    margin-top: 10px;
+}
+
+#output div {
+    background: #f5f5f5;
+    margin: 5px;
+    padding: 10px;
+    border-radius: 8px;
+    border-left: 4px solid #f25bc7;
+}
+
+p {
+    color: #555;
+}
+.card {
+    width: 90%;
+    max-width: 450px;
+    margin: 20px auto;
+    background: white;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0px 5px 20px rgba(0,0,0,0.15);
+}
+@media (max-width: 600px) {
+    .container, .card {
+        width: 95%;
+    }
+
+    input, button {
+        font-size: 14px;
+    }
+}
+#seatContainer {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 10px;
+    margin-top: 10px;
+    justify-items: center;
+}
+
+#seatContainer button {
+    background: #eee;
+    border: none;
+    padding: 10px;
+    border-radius: 6px;
+    cursor: pointer;
+    width: 50px;
+    height: 50px;
+}
+
+#seatContainer button:hover {
+    background: #c9f88c;
+    color: white;
+}
